@@ -1,0 +1,17 @@
+﻿@model Category
+
+<form method="post">
+
+   <h2>Create A New Category </h2>
+    <div calss="row">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <div class="row">
+        
+        <div class="col-6" style="padding-bottom">
+           <button type="submit" class="btn btn-primary">Save</button>
+            <a asp-controller="Category" asp-action="Index" class="btn btn-primary">Return Category List </a>
+        </div>
+        </div>      
+    </div>
+</form>

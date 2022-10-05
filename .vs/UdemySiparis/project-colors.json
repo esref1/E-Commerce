@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e7306197-3d97-462e-85c2-7ec2c6bef299": {
+      "ProjectGuid": "e7306197-3d97-462e-85c2-7ec2c6bef299",
+      "DisplayName": "UdemySiparis",
+      "ColorIndex": 0
+    },
+    "321cc903-0583-4c4e-a9a2-32651e2665cb": {
+      "ProjectGuid": "321cc903-0583-4c4e-a9a2-32651e2665cb",
+      "DisplayName": "UdemySiparis.Data",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

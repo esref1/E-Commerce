@@ -1,0 +1,66 @@
+﻿@model IEnumerable<OrderProduct>
+ <div class="container">
+        <div class="row">
+            <div class="col-6">
+            <h2>Order List </h2>
+           </div>
+        <div class="col-6">
+               
+         </div>
+
+         </div>
+        <div class="row">
+            
+            <table class="table table-bordered table-striped"> 
+                <thead>
+                    <tr>
+
+                        <th>
+                           Order Id
+                        </th>
+                         <th>
+                           Full Name
+                        </th>
+
+                        <th>
+                            Price
+                        </th>
+                        <th>
+                            Processes
+                        </th>
+                    </tr>
+
+
+                </thead>
+
+                <tbody>
+                    @foreach (var orderProduct in Model)
+                {
+                    
+                
+
+                    <tr>
+                       <td>@orderProduct.Id</td>
+                        <td>@orderProduct.Name </td>
+                        <td>@orderProduct.OrderPrice </td>
+                        <td>
+                        
+                         <a onclick="return confim ('Are you sure to delete?');" asp-area="Customer" asp-controller="Order" asp-action="Cancel" asp-route-id="@orderProduct.Id" class="btn btn-danger">
+                              Cancel
+                         </a>
+                         </td>>
+                        
+                    </tr>
+                    <tr>
+                      
+                        </tr>
+                }
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+    </div>
